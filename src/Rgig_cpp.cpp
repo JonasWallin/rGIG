@@ -7,7 +7,7 @@
 #endif
 
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
 // Below is a simple example of exporting a C++ function to R. You can
 // source thiz function into an R session using the Rcpp::sourceCpp 
 // function (or via the Source button on the editor toolbar)
