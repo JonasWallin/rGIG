@@ -20,7 +20,7 @@ namespace
 {
 const double m1   =       4294967087.0;
 const double m2   =       4294944443.0;
-const double norm =       1.0 / (m1 + 1.0);
+const double norm_base =       1.0 / (m1 + 1.0);
 const double a12  =       1403580.0;
 const double a13n =       810728.0;
 const double a21  =       527612.0;
@@ -261,7 +261,7 @@ double RngStream::U01 ()
     Cg[3] = Cg[4]; Cg[4] = Cg[5]; Cg[5] = p2;
 
     /* Combination */
-    u = ((p1 > p2) ? (p1 - p2) * norm : (p1 - p2 + m1) * norm);
+    u = ((p1 > p2) ? (p1 - p2) * norm_base : (p1 - p2 + m1) * norm_base);
 
     return (anti == false) ? u : (1 - u);
 }
