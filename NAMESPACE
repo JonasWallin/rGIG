@@ -1,0 +1,3 @@
+useDynLib(rGIG)
+importFrom(Rcpp, evalCpp)
+export(rGIG)
